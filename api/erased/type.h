@@ -202,13 +202,6 @@ struct Type
 	//    - the returned list is strictly ordered by fully qualified class name including template 
 	//    parameters. 
 	static const TypeList& getKnownTypes();
-
-
-private:
-
-	//---------------------------------------------------------------------------------------------
-	// internal data: opaque pointer to type trait && type flags
-	const void* opaqueTrait;
 };
 
 
