@@ -119,7 +119,6 @@ struct Type
 
 	//---------------------------------------------------------------------------------------------
 	//    returns the the reference type of this type as pointer.
-	//
 	const Type& reference() const;
 
 
@@ -229,58 +228,3 @@ struct TypeList
 
 } // namespace Erased
 } // namespace
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// TODO: mode to private headers
-/*
-// deduce qualifiers from type
-template<class T, bool isConst, bool IsVolatile> class TypeDeducer {
-public:
-__inline static const Type* getType() { 0; } // return getTypeNonConstNonVolatile<T>(); }
-};
-template<class T> class TypeDeducer < T, true, false > {
-__inline static const Type* getType() { 0; } // return getTypeConstNonVolatile<T>(); }
-};
-template<class T> class TypeDeducer < T, false, true > {
-__inline static const Type* getType() { 0; } // return getTypeNonConstVolatile<T>(); }
-};
-template<class T> class TypeDeducer < T, true, true > {
-__inline static const Type* getType() { 0; } // return getTypeConstVolatile<T>(); }
-};
-
-
-// get type from reference
-template<class T> __inline static const Type* getTypeFromValue(T& t)
-{
-return TypeDeducer<T, std::is_const<T>, std::is_volatile<T> >::getType();
-}
-*/
