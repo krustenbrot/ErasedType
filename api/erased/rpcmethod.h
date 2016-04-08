@@ -33,14 +33,17 @@ struct StaticRpcMethodList;					//< static rpc method entry list of type erased 
 //-------------------------------------------------------------------------------------------------
 struct RpcMethod
 {
-	// returns the type trait of this field
-	const Type& getType() const;
+	// returns the type trait of this rpc method's return type
+	const Type& getReturnType() const;
 
-	// get access modifier for this field
+	// returns the type trait of this rpc method's parameter type
+	const Type& getParameterType() const;
+
+	// get access modifier for this rpc method
 	Access getAccess() const;
-	
-	// returns the byte offset of this field
-	off_t getBaseOffset() const;
+
+	// returns the member function pointer for this rpc function
+	void* getFunctionPtr() const;
 };
 
 
@@ -63,16 +66,16 @@ struct RpcMethodList
 //-------------------------------------------------------------------------------------------------
 struct StaticRpcMethod
 {
-	// returns the type trait of this rpc method's return type
+	// returns the type trait of this static rpc method's return type
 	const Type& getReturnType() const;
 
-	// returns the type trait of this rpc method's parameter type
+	// returns the type trait of this static rpc method's parameter type
 	const Type& getParameterType() const;
 
-	// get access modifier for this rpc method
+	// get access modifier for this static rpc method
 	Access getAccess() const;
 
-	// returns the member function pointer for this rpc function
+	// returns the static function pointer for this rpc function
 	void* getFunctionPtr() const;
 };
 
