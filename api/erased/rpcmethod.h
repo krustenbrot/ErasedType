@@ -52,10 +52,10 @@ struct RpcMethod
 //-------------------------------------------------------------------------------------------------
 struct RpcMethodList
 {
-	// get size of field list
+	// get size of rpc method list
 	size_t size() const;
 
-	// access field list via iterators
+	// access rpc method list via iterators
 	RpcMethodIterator begin() const;
 	RpcMethodIterator end() const;
 };
@@ -85,10 +85,10 @@ struct StaticRpcMethod
 //-------------------------------------------------------------------------------------------------
 struct StaticRpcMethodList
 {
-	// get size of rpc method list
+	// get size of static rpc method list
 	size_t size() const;
 
-	// access rpc method list via iterators
+	// access rpc static method list via iterators
 	StaticRpcMethodIterator begin() const;
 	StaticRpcMethodIterator end() const;
 };
