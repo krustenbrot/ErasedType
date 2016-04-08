@@ -125,10 +125,10 @@ struct Type
 	//---------------------------------------------------------------------------------------------
 	// only for classes and structures:
 	//
-	//    if this type is a class or struct, a list containing all parent classes will be returned.
+	//    if this type is a class or struct, a list containing all base classes will be returned.
 	//    if this type is primitive, an empty list will be returned.
 	// the returned list is in declaration order.
-	const BaseList& getParents() const;
+	const BaseList& getBaseClasses() const;
 
 
 	//---------------------------------------------------------------------------------------------
