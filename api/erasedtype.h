@@ -1,9 +1,9 @@
 //-------------------------------------------------------------------------------------------------
 //
-//   project:				dstd::Erased - An erased type and runtime reflection frame work.
-//   author:				Julian Dessecker
+//   project:               dstd::Erased - An erased type and runtime reflection frame work.
+//   author:                Julian Dessecker
 //
-//   description:			Include file for erased types.
+//   description:           Include file for erased types.
 //
 //-------------------------------------------------------------------------------------------------
 // @@LICENSE TEXT@@
